@@ -72,5 +72,13 @@ public class RadioTest {
         radio.decreaseVolume();
         assertEquals(0, radio.getVolume());
     }
+    @Test
+    public void decreaseVolumeValidValueTest(){
+        Radio radio = new Radio();
+        radio.setVolume(50);
+        radio.decreaseVolume();
+        assertEquals(49, radio.getVolume());
+    }
+
 
 }
